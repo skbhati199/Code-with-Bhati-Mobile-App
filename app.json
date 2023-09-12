@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "codewithbeto",
-    "slug": "codewithbeto",
-    "scheme": "codewithbeto",
+    "name": "skbhati199",
+    "slug": "skbhati199",
+    "scheme": "skbhati199",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,11 +12,13 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "buildNumber": "6",
-      "bundleIdentifier": "dev.codewithbeto",
+      "bundleIdentifier": "com.infoskillstechnology.mobileapp",
       "usesAppleSignIn": true,
       "infoPlist": {
         "NSLocationAlwaysUsageDescription": "We use your location to send you relevant push notifications",
@@ -29,7 +31,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "dev.codewithbeto"
+      "package": "com.infoskillstechnology.mobileapp"
     },
     "web": {
       "bundler": "metro",
@@ -54,8 +56,32 @@
         "origin": false
       },
       "eas": {
-        "projectId": "1ac29c3c-1fc7-479d-8e0c-cd6ecdc09217"
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "OneSignalNotificationServiceExtension",
+                  "bundleIdentifier": "com.infoskillstechnology.mobileapp.OneSignalNotificationServiceExtension",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.com.infoskillstechnology.mobileapp.onesignal"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "ab6eb11e-9d70-4992-8e6c-98b2de09663a"
       }
+    },
+    "owner": "skbhati199",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ab6eb11e-9d70-4992-8e6c-98b2de09663a"
     }
   }
 }

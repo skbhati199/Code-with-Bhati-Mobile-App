@@ -49,7 +49,7 @@ export default function Index(): JSX.Element {
       const credential = GithubAuthProvider.credential(access_token);
       const data = await signInWithCredential(auth, credential);
 
-      fetch("https://api.github.com/user/following/betomoedano", {
+      fetch("https://api.github.com/user/following/skbhati199", {
         method: "PUT",
         headers: {
           Authorization: `token ${access_token}`,
